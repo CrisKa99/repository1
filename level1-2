@@ -1,0 +1,19 @@
+#include<bits/stdc++.h>
+using namespace std;
+char s[10];
+int main() 
+{
+ FILE* fp = fopen("C:\\Users\\lenovo\\Desktop\\dian\\输入.txt","r");
+ if (fp == NULL)
+ {printf("打开文件失败.\n");
+ return 0;
+ }
+ int a,b,c;
+ fscanf(fp,"%s ",&s)
+ fscanf(fp,"%d\n",&a);
+ fscanf(fp,"%d ",&b);
+ fscanf(fp,"%d\n",&c);
+ printf("电梯的运行过程为：%d—%d—%d",&a,&b,&c);
+ fclose(fp);
+ return 0;
+}
